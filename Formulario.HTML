@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Inscripción</title>
+  <link rel="stylesheet" href="CSS3/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <img src="logo/ecci_logo.png" alt="Logo Universidad ECCI" class="logo">
+    <h1 class="title">Conecta ECCI – Red de Emprendedores</h1>
+    <p class="subtitle">Centro de Desarrollo Empresarial (CDE) / Proyección Social</p>
+  </header>
+
+  <!-- Formulario -->
+  <main class="form-wrap">
+    <h2 class="h2 center">Formulario de Inscripción</h2>
+
+    <form id="formEmprendimiento" class="form-card">
+
+      <!-- Datos personales -->
+      <fieldset class="fieldset">
+        <legend class="legend">Datos personales</legend>
+
+        <label for="nombre" class="label">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" class="input" required>
+
+        <label for="cedula" class="label">No. de Cédula:</label>
+        <input type="text" id="cedula" name="cedula" class="input" required>
+
+        <label for="celular" class="label">Número de Celular:</label>
+        <input type="tel" id="celular" name="celular" class="input" required>
+
+        <label for="vinculacion" class="label">Tipo de vinculación:</label>
+        <select id="vinculacion" name="vinculacion" class="input" required>
+          <option value="">Seleccione...</option>
+          <option>Estudiante actual</option>
+          <option>Egresado</option>
+          <option>Administrativo</option>
+          <option>Docente</option>
+        </select>
+      </fieldset>
+
+      <!-- Datos del emprendimiento -->
+      <fieldset class="fieldset">
+        <legend class="legend">Datos del emprendimiento</legend>
+
+        <label for="nombreEmprendimiento" class="label">Nombre del Emprendimiento:</label>
+        <input type="text" id="nombreEmprendimiento" name="nombreEmprendimiento" class="input" required>
+
+        <label for="correo" class="label">Correo Empresarial:</label>
+        <input type="email" id="correo" name="correo" class="input" required>
+
+        <label for="tipoActor" class="label">Tipo de Actor:</label>
+        <select id="tipoActor" name="tipoActor" class="input" required>
+          <option>Emprendimiento</option>
+          <option>Negocio</option>
+          <option>Empresa</option>
+        </select>
+
+        <label for="descripcion" class="label">Descripción corta:</label>
+        <textarea id="descripcion" name="descripcion" rows="3" class="textarea" required></textarea>
+
+        <label for="productos" class="label">Productos o servicios:</label>
+        <input type="text" id="productos" name="productos" class="input" required>
+
+        <label for="categoria" class="label">Categoría:</label>
+        <select id="categoria" name="categoria" class="input" required>
+          <option>Alimentos y bebidas</option>
+          <option>Moda y accesorios</option>
+          <option>Servicios creativos</option>
+          <option>Tecnología y software</option>
+          <option>Educación y formación</option>
+          <option>Bienestar y salud</option>
+          <option>Gastronomía</option>
+          <option>Servicios de ingeniería</option>
+          <option>Asesoría y consultoría</option>
+          <option>Otro</option>
+        </select>
+
+        <label for="fechaCreacion" class="label">Fecha de creación:</label>
+        <input type="date" id="fechaCreacion" name="fechaCreacion" class="input">
+      </fieldset>
+
+      <!-- Contacto y cobertura -->
+      <fieldset class="fieldset">
+        <legend class="legend">Contacto y cobertura</legend>
+
+        <p class="label">Canales de contacto:</p>
+        <div class="checks">
+          <label><input type="checkbox" name="canales" value="Instagram"> Instagram</label>
+          <label><input type="checkbox" name="canales" value="Facebook"> Facebook</label>
+          <label><input type="checkbox" name="canales" value="Web"> Página web</label>
+          <label><input type="checkbox" name="canales" value="WhatsApp"> WhatsApp</label>
+          <label><input type="checkbox" name="canales" value="Ubicación física"> Ubicación física</label>
+        </div>
+
+        <label for="cobertura" class="label">Cobertura del negocio:</label>
+        <select id="cobertura" name="cobertura" class="input">
+          <option>Ciudad</option>
+          <option>Departamento</option>
+          <option>Nacional</option>
+          <option>Internacional</option>
+          <option>Zonal (localidad)</option>
+        </select>
+
+        <label for="logoFile" class="label">Anexar logo (máx. 10MB):</label>
+        <input type="file" id="logoFile" name="logoFile" accept="image/*" class="input">
+      </fieldset>
+
+      <!-- Consentimientos -->
+      <fieldset class="fieldset">
+        <legend class="legend">Consentimientos</legend>
+
+        <p class="label">¿Autoriza la publicación en el Directorio de Emprendedores ECCI?</p>
+        <div class="radios">
+          <label><input type="radio" name="publicacion" value="Acepto" required> Acepto</label>
+          <label><input type="radio" name="publicacion" value="No acepto"> No acepto</label>
+        </div>
+
+        <p class="label">¿Autoriza la recepción de información institucional?</p>
+        <div class="radios">
+          <label><input type="radio" name="informacion" value="Acepto" required> Acepto</label>
+          <label><input type="radio" name="informacion" value="No acepto"> No acepto</label>
+        </div>
+      </fieldset>
+
+      <!-- Comentarios -->
+      <fieldset class="fieldset">
+        <legend class="legend">Comentarios</legend>
+        <textarea id="comentarios" name="comentarios" rows="4" class="textarea" placeholder="Escriba sus comentarios..."></textarea>
+      </fieldset>
+
+      <!-- Botones -->
+      <div class="actions">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="reset" class="btn btn-muted">Borrar formulario</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Universidad ECCI - Innovación y Emprendimiento</p>
+  </footer>
+
+</body>
+</html>
